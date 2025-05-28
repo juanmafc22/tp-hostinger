@@ -1,0 +1,115 @@
+<!--
+    Trabajo práctico N° 1 - Hostinger
+    Alumno: Juan Manuel Fernández Casenave
+    DNI: 23185438
+    Comisión: Lunes y miércoles de 09:00 a 12:00
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostinger: dale vida a tu idea en internet con una web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <!-- header con la navegación-->
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/img/logo.png" alt="Logo de Hostinger">
+        </div>
+        <div class="header__nav">
+            <img src="./assets/img/burger-menu.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <!---
+            Acá debería empezar el div que:
+            1. envuelve al div del texto del hero
+            2. al div de la imagen
+            a. Hasta cierto media query en column
+            b. Después en row
+        -->
+        
+        <div class="container__hero">
+        
+            <!-- Comienza el div del texto del hero-->
+            <div class="container__textosPrincipales">
+                <div class="main__textosCabecera">
+                    <h1>Everything you need to create a website</h1>
+                    <p class="h1__underline">Up to <span class="h1__underline--claro">75%</span> off hosting + website builder</p>
+                </div>
+                <div class="hero__listItems">
+                    <div class="hero__item">
+                        <i class="bi bi-check-lg hero__tilde"></i>
+                        <span class="hero__texto"  >Free domain</span>
+                        <i class="bi bi-question-circle hero__preguntaIcon "></i>
+
+                    </div>
+                    <div class="hero__item">
+                        <i class="bi bi-check-lg hero__tilde "></i>
+                        <span class="hero__texto">Free website migration</span>
+                        <i class="bi bi-question-circle hero__preguntaIcon "></i>
+
+                    </div>
+                    <div class="hero__item hero__item--ultimoItem">
+                        <i class="bi bi-check-lg hero__tilde"></i>
+                        <span class="hero__texto">24/7 customer support</span>
+                    </div>
+                    <div class="hero__seccionPrecio">
+                        <span class="hero__precio hero__precio--signoDolar">
+                            US$
+                        </span>
+                        <span class="hero__precio hero__precio--monto">
+                            2.99
+                        </span>
+                        <span class="hero__precio">
+                            /mo
+                        </span>
+                    </div>
+                    <div class="hero__3meses">
+                        +3 months free
+                    </div>
+                    <div class="hero__seccionBotones">
+                        <button class="hero__boton hero__boton--texto">Claim deal</button>
+                        <button class="hero__boton hero__boton--contador">02 : 11 : 51 :33</button>
+                    </div>
+                    <div>
+                        <i class="bi bi-shield-check hero__textoGarantia"></i>
+                        <span class="hero__textoGarantia">30-day money-back guarantee</span>
+                   </div>
+                </div>
+            </div>
+            <!-- Fin del div del texto del hero-->
+
+            <!-- Aquí comienza el div de la imagen -->
+            <div class="container__imagen">
+                <img src="./assets/img/hero-image.avif" alt="Hostinger Imagen" class="hero__imagen">
+            </div>
+
+
+            <!-- Fin del div de la imagen -->
+
+        <!-- Fin del div que envuelve todo-->
+        </div>
+
+    </main>
+
+        <!-- Aquí comienza la sección de migración de Websites -->
+    <section>
+
+    </section> 
+
+
+        <!-- Fin seccción migración-->
+
+
+
+    <script src="./assets/js/header.js"></script>
+</body>
+</html>
