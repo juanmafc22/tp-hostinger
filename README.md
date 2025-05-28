@@ -1,4 +1,4 @@
-# TP Integrador HTML y CSS + Responsive
+# TP n°1: Integrador HTML y CSS + Responsive
 
 - **Alumno:** Juan Manuel Fernández Casenave
 - **DNI:** 23185438
