@@ -226,8 +226,51 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
 
+.migracion__h2 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
 
+.migracion__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.migracion__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-violeta-mediano);
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.migracion__h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.migracion__iconoContenedor {
+  padding: 10px;
+  color: var(--color-blanco);
+  background-color: var(--color-violeta-claro);
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+}
+
+.migracion__texto {
+  font-size:16px;
+  line-height: 24px;
+  text-align: left;
 }
 
 
