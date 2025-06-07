@@ -295,6 +295,8 @@ footer {
 .footer__tycYtarjetas {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #d5dfff;
+  padding-bottom: 20px;
 }
 
 .footer__contenedorSocialMedia {
@@ -335,8 +337,9 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
+  max-width: 300px;
 }
 
 .footer__iconoMedioPago {
@@ -346,6 +349,43 @@ footer {
   border-radius: 8px;
   border: 1px solid var(--color-violeta-muyClaro);
 }
+
+.footer__ultimosTextos {
+  display: flex;
+  color: var(--color-violeta-mediano);
+  flex-direction: column;
+  margin: 0px 0px 8px;
+  font-size: 14px ;
+  padding: 24px 0px 16px;
+  gap: 16px;
+}
+
+/* CSS para el botón tipo float de Ask Kodee */
+.ask__kodee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 9px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--color-violeta-claro);
+  color: white;
+  border-radius: 17px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  z-index: 1000;
+  gap: 13px;
+}
+
+.img__askKodee {
+  width: 16px;
+  height: 16px;
+}
+
+
 
 
 /* Estilos para celulares grandes y tablets (481px a 768px) */
