@@ -9,7 +9,7 @@
     --color-violeta-mediano: #2F1C6A;
     --color-violeta-claro: #673DE6;
     --color-violeta-muyClaro: #e2dbfc;
-    --color-violeta-clarisimo: #f2f3fd;
+    --color-violeta-clarisimo: #f4f5ff;
     --color-verde-para-tildes: #1bb89c;
 
 }
@@ -319,6 +319,32 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+}
+
+.footer__textosTyC {
+  color: var(--color-violeta-mediano);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 24px;
+  gap: 20px;
+  padding-top: 24px;
+}
+
+.footer__iconosTarjetas {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer__iconoMedioPago {
+  background-color: var(--color-blanco);
+  width: 60px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--color-violeta-muyClaro);
 }
 
 
