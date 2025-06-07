@@ -273,6 +273,23 @@ h1 {
   text-align: left;
 }
 
+/* Estilos de la sección footer */
+.footer__logoYSocialMedia {
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.footer__tycYtarjetas {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contenedorSocialMedia {
+  display: flex;
+
+}
+
 
 /* Estilos para celulares grandes y tablets (481px a 768px) */
 /* @media (min-width: 481px) { */
