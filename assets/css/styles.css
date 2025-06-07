@@ -299,13 +299,26 @@ footer {
 
 .footer__contenedorSocialMedia {
   display: flex;
-  padding: 0px 10px 20px 10px;
+  justify-content: space-between;
+  padding: 0px 8px 20px 8px;
 
 }
 
 .footer__logo {
   width: 147px;
   height: 30px;
+  margin-top: 20px;
+}
+
+.footer__iconoSocialMedia {
+  display: flex;
+  background-color: var(--color-violeta-mediano);
+  color: var(--color-violeta-clarisimo);
+  width: 26.88px;
+  height: 26.88px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
 
