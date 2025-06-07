@@ -9,7 +9,9 @@
     --color-violeta-mediano: #2F1C6A;
     --color-violeta-claro: #673DE6;
     --color-violeta-muyClaro: #e2dbfc;
+    --color-violeta-clarisimo: #f2f3fd;
     --color-verde-para-tildes: #1bb89c;
+
 }
 
 /*  Resetos generales   */
@@ -24,6 +26,8 @@ body {
     font-optical-sizing: auto;
     background-color: var(--color-blanco);
     width: 100vw;
+    /* prevent overflow */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 /* Estilos Mobile First (default) */
@@ -71,7 +75,7 @@ header,
 
 /* Estilos de la sección Hero */
 .container__textosPrincipales {
-  width: 100vw;
+  width: 100%; /* was 100vw */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -79,7 +83,7 @@ header,
 }
 
 .main__textosCabecera {
-  width: 100vw;
+  width: 100%; /* was 100vw */
   padding: 14px 20px 0px 20px;
 }
 
@@ -87,7 +91,7 @@ header,
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  width: 100vw;
+  width: 100%; /* was 100vw */
   padding: 0px 20px;
 }
 
@@ -193,7 +197,7 @@ header,
 
 .hero__imagen {
   padding: 10px 20px;
-  width: 100vw;
+  width: 100%; /* was 100vw */
 }
 
 h1 {
@@ -274,10 +278,18 @@ h1 {
 }
 
 /* Estilos de la sección footer */
+footer {
+  background-color: var(--color-violeta-clarisimo);
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 566px;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__logoYSocialMedia {
   display: flex;
   flex-direction: column-reverse;
-
 }
 
 .footer__tycYtarjetas {
@@ -287,7 +299,13 @@ h1 {
 
 .footer__contenedorSocialMedia {
   display: flex;
+  padding: 0px 10px 20px 10px;
 
+}
+
+.footer__logo {
+  width: 147px;
+  height: 30px;
 }
 
 
