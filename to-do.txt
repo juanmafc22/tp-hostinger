@@ -1,0 +1,5 @@
+1. Hacer el tamaño de fuente más grande en el breakpoint más grande
+2. Darle más márgen izquierdo a la sección hero en el breakpoint más grande
+3. Aumentar el margen superior del hero en el breakpoint más grande
+4. En el breakpoint más grande, poner el flex-direction de la sección migración de column a row
+5. Desarrollar la navegación con los links para la versión desktop y en el footer en desktop debería ocupar todo el ancho
