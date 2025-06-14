@@ -5,6 +5,7 @@
 :root {
     --color-blanco: #ffffff;
     --color-negro: #000000;
+    --color-violeta-muyOscuro: #1d1e20;
     --color-violeta-oscuro: #1F1346;
     --color-violeta-mediano: #2F1C6A;
     --color-violeta-claro: #673DE6;
@@ -34,7 +35,6 @@ body {
 
 .contenedor__responsive {
   margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
 }
 
@@ -160,6 +160,7 @@ header { /* optimicé el código CSS quitanto la class header innecesaria */
   flex-direction: column-reverse;
   margin: 10px 0px;
   gap: 12px;
+  align-items: center;
 }
 
 .hero__boton {
@@ -193,11 +194,13 @@ header { /* optimicé el código CSS quitanto la class header innecesaria */
 .hero__boton--texto {
   color: var(--color-blanco);
   background-color: var(--color-violeta-claro);
+  width: 100%;
 }
 
 .hero__boton--contador {
   color: var(--color-violeta-mediano);
   background-color: var(--color-violeta-muyClaro);
+  width: 100%;
 }
 
 .hero__imagen {
@@ -206,7 +209,7 @@ header { /* optimicé el código CSS quitanto la class header innecesaria */
 }
 
 h1 {
-  color: var(--color-violeta-mediano);
+  color: var(--color-violeta-muyOscuro);
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -215,7 +218,7 @@ h1 {
 }
 
 .h1__underline {
-  color: var(--color-violeta-mediano);
+  color: var(--color-violeta-muyOscuro);
   margin-top: 8px;
   font-size: 18px;
   line-height: 24px;
@@ -227,6 +230,11 @@ h1 {
 }
 
 /* Estilos de la sección Migración */
+.container__migracion {
+  width: 100%;
+  background-color: var(--color-violeta-oscuro);
+}
+
 .seccion__migracion {
   color: var(--color-blanco);
   background-color: var(--color-violeta-oscuro);
@@ -398,13 +406,35 @@ footer {
  .contenedor__responsive {
     max-width: 540px;
   }
+
+  .hero__boton, .hero__boton--contador {
+    max-width: 508px;
+  }
+
+
 }
 
 /* Estilos para desktops pequeños (769px a 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+
  .contenedor__responsive {
-    max-width: 768px;
+    max-width: 688px;
   }
+
+  .hero__seccionBotones {
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  .hero__boton {
+    width: 182px;
+  }
+
+  .hero__boton--contador {
+    width: 160px;
+  }
+
  
 }
 
@@ -421,4 +451,19 @@ footer {
     flex-direction: row;
     justify-content: start;
   }
+
+  .hero__seccionBotones {
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  .hero__boton {
+    width: 182px;
+  }
+
+  .hero__boton--contador {
+    width: 160px;
+  }
+
 }
