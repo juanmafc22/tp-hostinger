@@ -25,16 +25,21 @@ body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     background-color: var(--color-blanco);
-    width: 100vw;
+    width: 100%; /* Se cambia de 100vw a 100% según corrección */
     /* prevent overflow */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    /* overflow-x: hidden; /* Se quita overflow-x:hidden según corrección */
 }
 
 /* Estilos Mobile First (default) */
 
+.contenedor__responsive {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
 /* Estilos del Header */
-header,
-.header {
+header { /* optimicé el código CSS quitanto la class header innecesaria */
   position: sticky;
   top: 0;
   left: 0;
@@ -385,23 +390,18 @@ footer {
   height: 16px;
 }
 
-.contenedor__responsive {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-}
 
 
 /* Estilos para celulares grandes y tablets (481px a 768px) */
-/* @media (min-width: 481px) { */
 @media (min-width: 578px) and (max-width: 768px) {
+
  .contenedor__responsive {
     max-width: 540px;
   }
 }
 
 /* Estilos para desktops pequeños (769px a 1024px) */
-@media (min-width: 768px) and (max-with: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
  .contenedor__responsive {
     max-width: 768px;
   }
@@ -409,7 +409,7 @@ footer {
 }
 
 /* Estilos para pantallas grandes de escritorio (desde 1025px en adelante) */
-@media (min-width: 1141px) {
+@media (min-width: 1025px) {
 
   header {
     height: 88px;
