@@ -466,6 +466,25 @@ footer {
     text-align: center;
   }
 
+  .migracion__item {
+    width: 688px;
+  }
+
+  .footer__logoYSocialMedia {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer__contenedorSocialMedia {
+    gap: 32px;
+  }
+
+  .footer__iconosTarjetas {
+    flex-wrap: nowrap;
+    gap: 25px;
+  }
+
  
 }
 
