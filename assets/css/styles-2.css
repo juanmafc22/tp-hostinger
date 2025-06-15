@@ -233,6 +233,9 @@ h1 {
 .container__migracion {
   width: 100%;
   background-color: var(--color-violeta-oscuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .seccion__migracion {
@@ -251,16 +254,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+
+/*
 .migracion__contenedor {
   display: flex;
   flex-direction: column;
 }
+*/
 
 .migracion__item {
   display: flex;
   flex-direction: column;
   background-color: var(--color-violeta-mediano);
-  align-items: flex-start;
+  align-items: flex-start; 
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -295,7 +301,6 @@ footer {
   background-color: var(--color-violeta-clarisimo);
   padding: 30px 20px;
   width: 100%;
-  max-width: 566px;
   display: flex;
   flex-direction: column;
 }
@@ -411,6 +416,23 @@ footer {
     max-width: 508px;
   }
 
+  .migracion__item {
+    width: 508px;
+  }
+
+  .migracion__contenedor {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* or center if you want vertical centering */
+    gap: 20px; /* optional: space between items */
+  }
+
+  .migracion__p {
+    max-width: 508px;
+    text-align: center;
+  }
+
+
 
 }
 
@@ -433,6 +455,15 @@ footer {
 
   .hero__boton--contador {
     width: 160px;
+  }
+
+  .container__textosPrincipales {
+    padding: 62px 0 80px;
+  }
+
+  .migracion__p {
+    max-width: 688px;
+    text-align: center;
   }
 
  
@@ -465,5 +496,6 @@ footer {
   .hero__boton--contador {
     width: 160px;
   }
+
 
 }
