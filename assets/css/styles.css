@@ -310,9 +310,11 @@ footer {
   flex-direction: column-reverse;
 }
 
+/* MODIFICAR */
+
 .footer__tycYtarjetas {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   border-bottom: 1px solid #d5dfff;
   padding-bottom: 20px;
 }
@@ -576,6 +578,25 @@ desktop grande, el logo y el menú expandido
 
   .hero__texto, .hero__3meses, .hero__precio, .hero__precio--signoDolar, .hero__precio--monto {
     color: var(--color-violeta-muyOscuro);
+  }
+
+  .footer__logoYSocialMedia {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__contenedorSocialMedia {
+    padding-top: 20px;
+    gap: 20px
+  }
+
+  .footer__tycYtarjetas {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__iconosTarjetas {
+    flex-wrap: nowrap;
   }
 
 }
