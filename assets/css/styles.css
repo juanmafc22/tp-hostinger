@@ -581,8 +581,11 @@ desktop grande, el logo y el menú expandido
   }
 
   .footer__logoYSocialMedia {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1125px;
+    margin: 0 auto;
   }
 
   .footer__contenedorSocialMedia {
@@ -591,12 +594,23 @@ desktop grande, el logo y el menú expandido
   }
 
   .footer__tycYtarjetas {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1125px;
+    margin: 0 auto;
   }
 
   .footer__iconosTarjetas {
     flex-wrap: nowrap;
+  }
+
+  .footer__ultimosTextos {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1125px;
+    padding-bottom: 50px;
+    margin: 0 auto;
   }
 
 }
