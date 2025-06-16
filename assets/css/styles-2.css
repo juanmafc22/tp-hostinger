@@ -403,6 +403,22 @@ footer {
   height: 16px;
 }
 
+/* Estilos para que el header sea visible según el viewport::after
+para todos los otros estilos solo el logo y el burger menu. Para tamaño
+desktop grande, el logo y el menú expandido
+*/
+
+.header__notDesktop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+ }
+
+.header__desktop {
+   display: none;
+ }
+
 
 
 /* Estilos para celulares grandes y tablets (481px a 768px) */
@@ -484,8 +500,6 @@ footer {
     flex-wrap: nowrap;
     gap: 25px;
   }
-
- 
 }
 
 /* Estilos para pantallas grandes de escritorio (desde 1025px en adelante) */
@@ -514,6 +528,14 @@ footer {
 
   .hero__boton--contador {
     width: 160px;
+  }
+
+  .header__notDesktop {
+    display: none;
+  }
+
+  .header__desktop {
+    display: flex;
   }
 
 
