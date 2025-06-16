@@ -5,6 +5,7 @@
 :root {
     --color-blanco: #ffffff;
     --color-negro: #000000;
+    --color-violeta-muyOscuro: #1d1e20;
     --color-violeta-oscuro: #1F1346;
     --color-violeta-mediano: #2F1C6A;
     --color-violeta-claro: #673DE6;
@@ -25,16 +26,20 @@ body {
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     background-color: var(--color-blanco);
-    width: 100vw;
+    width: 100%; /* Se cambia de 100vw a 100% según corrección */
     /* prevent overflow */
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    /* overflow-x: hidden; /* Se quita overflow-x:hidden según corrección */
 }
 
 /* Estilos Mobile First (default) */
 
+.contenedor__responsive {
+  margin: 0 auto;
+  width: 100%;
+}
+
 /* Estilos del Header */
-header,
-.header {
+header { /* optimicé el código CSS quitanto la class header innecesaria */
   position: sticky;
   top: 0;
   left: 0;
@@ -155,6 +160,7 @@ header,
   flex-direction: column-reverse;
   margin: 10px 0px;
   gap: 12px;
+  align-items: center;
 }
 
 .hero__boton {
@@ -188,11 +194,13 @@ header,
 .hero__boton--texto {
   color: var(--color-blanco);
   background-color: var(--color-violeta-claro);
+  width: 100%;
 }
 
 .hero__boton--contador {
   color: var(--color-violeta-mediano);
   background-color: var(--color-violeta-muyClaro);
+  width: 100%;
 }
 
 .hero__imagen {
@@ -201,7 +209,7 @@ header,
 }
 
 h1 {
-  color: var(--color-violeta-mediano);
+  color: var(--color-violeta-muyOscuro);
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -210,7 +218,7 @@ h1 {
 }
 
 .h1__underline {
-  color: var(--color-violeta-mediano);
+  color: var(--color-violeta-muyOscuro);
   margin-top: 8px;
   font-size: 18px;
   line-height: 24px;
@@ -222,6 +230,14 @@ h1 {
 }
 
 /* Estilos de la sección Migración */
+.container__migracion {
+  width: 100%;
+  background-color: var(--color-violeta-oscuro);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .seccion__migracion {
   color: var(--color-blanco);
   background-color: var(--color-violeta-oscuro);
@@ -238,16 +254,19 @@ h1 {
   margin-bottom: 20px;
 }
 
+
+/*
 .migracion__contenedor {
   display: flex;
   flex-direction: column;
 }
+*/
 
 .migracion__item {
   display: flex;
   flex-direction: column;
   background-color: var(--color-violeta-mediano);
-  align-items: flex-start;
+  align-items: flex-start; 
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -282,7 +301,6 @@ footer {
   background-color: var(--color-violeta-clarisimo);
   padding: 30px 20px;
   width: 100%;
-  max-width: 566px;
   display: flex;
   flex-direction: column;
 }
@@ -385,30 +403,179 @@ footer {
   height: 16px;
 }
 
+/* Estilos para que el header sea visible según el viewport::after
+para todos los otros estilos solo el logo y el burger menu. Para tamaño
+desktop grande, el logo y el menú expandido
+*/
+
+.header__notDesktop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+ }
+
+.header__desktop {
+   display: none;
+ }
 
 
 
 /* Estilos para celulares grandes y tablets (481px a 768px) */
-/* @media (min-width: 481px) { */
-@media (min-width: 577px) {
+@media (min-width: 578px) and (max-width: 768px) {
 
+ .contenedor__responsive {
+    max-width: 540px;
+  }
+
+  .hero__boton, .hero__boton--contador {
+    max-width: 508px;
+  }
+
+  .migracion__item {
+    width: 508px;
+  }
+
+  .migracion__contenedor {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* or center if you want vertical centering */
+    gap: 20px; /* optional: space between items */
+  }
+
+  .migracion__p {
+    max-width: 508px;
+    text-align: center;
+  }
 
 }
 
 /* Estilos para desktops pequeños (769px a 1024px) */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+
+ .contenedor__responsive {
+    max-width: 688px;
+  }
+
+  .hero__seccionBotones {
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  .hero__boton {
+    width: 182px;
+  }
+
+  .hero__boton--contador {
+    width: 160px;
+  }
+
+  .container__textosPrincipales {
+    padding: 62px 0 80px;
+  }
+
+  .migracion__p {
+    max-width: 688px;
+    text-align: center;
+  }
+
+  .migracion__item {
+    width: 688px;
+  }
+
+  .footer__logoYSocialMedia {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer__contenedorSocialMedia {
+    gap: 32px;
+  }
+
+  .footer__iconosTarjetas {
+    flex-wrap: nowrap;
+    gap: 25px;
+  }
 }
 
 /* Estilos para pantallas grandes de escritorio (desde 1025px en adelante) */
-@media (min-width: 1141px) {
+@media (min-width: 1025px) {
 
   header {
     height: 88px;
+    width: 100%;
   }
 
   .container__hero {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    padding: 0 50px;
   }
+
+  .hero__seccionBotones {
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 15px;
+  }
+
+  .hero__boton {
+    width: 182px;
+  }
+
+  .hero__boton--contador {
+    width: 160px;
+  }
+
+  .header__notDesktop {
+    display: none;
+  }
+
+  .header__desktop {
+    display: flex;
+  }
+
+  .container__migracion {
+    width: 100%;
+    background-color: var(--color-violeta-oscuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .migracion__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-violeta-mediano);
+    align-items: flex-start; 
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    padding: 20px 32px;
+    height: 256px;
+    width: 300px;
+    max-width: 360px;
+  }
+
+  .migracion__p {
+    max-width: 1030px;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 27px;
+    max-width: 400px;
+  }
+
+  .hero__texto, .hero__3meses, .hero__precio, .hero__precio--signoDolar, .hero__precio--monto {
+    color: var(--color-violeta-muyOscuro);
+  }
+
 }
