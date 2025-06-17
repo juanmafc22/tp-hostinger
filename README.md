@@ -4,6 +4,25 @@
 - **DNI:** 23185438
 - **Comisión:** Lunes y miércoles de 09:00 a 12:00
 
+## Comentarios a corregir del TP
+
+- A mejorar:
+  - No es válido usar 'overflow-x: hidden' para evitar el scroll horizontal. Basta con ponerle 'width:100%' al body en lugar de '100vw'
+  - Las sections deben ir dentro de main.
+- Errores:
+  - El header en desktop no tiene el nav con los links.
+  - El footer en desktop debería ocupar todo el ancho.
+
+## Correcciones realizadas:
+
+- Se corrigió el uso de 'overflow-x: hidden' por 'width: 100
+- No pudo mover las sections adentro del main. Intenté hacerlo pero se me rompía el diseño
+- El header ahora incluye el nav con los links en desktop.
+- El footer ahora ocupa todo el ancho en desktop.
+
+---
+
+## Indicaciones del TP
 - Página inicial de Hostinger
 - Se debe desarrollar los siguientes componentes de la página de Hostinger.
   - Header

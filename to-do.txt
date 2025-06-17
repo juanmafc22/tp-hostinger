@@ -1,8 +1,0 @@
-Para el media query del desktop:
-1. Agregar navegación completa.
-2. Arreglar el migracion div: uno no está tomando el tamaño correcto.
-3. Hacer que el footer tome en 100% del ancho de la pantalla.
-
-Otros detalles si dan el tiempo:
-1. Ver color de fuente de la sección hero.
-2. Ver el botón "Get Started" de la sección migración
