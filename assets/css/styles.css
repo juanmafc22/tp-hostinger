@@ -631,6 +631,9 @@ desktop grande, el logo y el menú expandido
 
   .header__desktopLadoDerecho {
     display: flex;
+    gap: 36px;
+    padding-right: 42px;
+    align-items: center;
   }
 
   .header__mainNav {
@@ -658,4 +661,40 @@ desktop grande, el logo y el menú expandido
     padding: 16px 16px 16px 20px;
   }
 
+  .header__bandera {
+    height: 40px;
+    width: auto;
+  }
+
+  .header__botonLogin {
+    font-size: 14px;
+    font-weight: 700;
+    width: 85px;
+    height: 45px;
+    padding: 6px 12px;
+    color: var(--color-violeta-muyOscuro);
+    border: 2px solid var(--color-violeta-muyOscuro);
+    background-color: var(--color-blanco);
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .header__banderaYTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+  }
+
+  .header__englishText {
+    font-weight: 700;
+  }
+
+  .container__hero {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0 60px 0;
+  }
 }
