@@ -27,7 +27,6 @@ body {
     font-optical-sizing: auto;
     background-color: var(--color-blanco);
     width: 100%; /* Se cambia de 100vw a 100% según corrección */
-    /* prevent overflow */
     /* overflow-x: hidden; /* Se quita overflow-x:hidden según corrección */
 }
 
@@ -39,7 +38,8 @@ body {
 }
 
 /* Estilos del Header */
-header { /* optimicé el código CSS quitanto la class header innecesaria */
+/* Optimicé el código CSS quitanto la class .header innecesaria */
+header { 
   position: sticky;
   top: 0;
   left: 0;
@@ -441,8 +441,8 @@ desktop grande, el logo y el menú expandido
   .migracion__contenedor {
     flex-direction: row;
     justify-content: center;
-    align-items: center; /* or center if you want vertical centering */
-    gap: 20px; /* optional: space between items */
+    align-items: center; 
+    gap: 20px; 
   }
 
   .migracion__p {
@@ -535,10 +535,6 @@ desktop grande, el logo y el menú expandido
     display: none;
   }
 
-  .header__desktop {
-    display: flex;
-  }
-
   .container__migracion {
     width: 100%;
     background-color: var(--color-violeta-oscuro);
@@ -572,8 +568,10 @@ desktop grande, el logo y el menú expandido
   }
 
   h1 {
-    font-size: 27px;
+    font-size: 33px;
     max-width: 400px;
+    line-height: 43px;
+    padding-bottom: 7px;
   }
 
   .hero__texto, .hero__3meses, .hero__precio, .hero__precio--signoDolar, .hero__precio--monto {
@@ -611,6 +609,53 @@ desktop grande, el logo y el menú expandido
     max-width: 1125px;
     padding-bottom: 50px;
     margin: 0 auto;
+  }
+
+  /* Estilos en el header que solo aparecen en este media query */
+
+  .header__desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1271px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .header__desktopLadoIzquierdo {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .header__desktopLadoDerecho {
+    display: flex;
+  }
+
+  .header__mainNav {
+    display: flex;
+    gap: 32px; /* space between items, adjust as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .main-nav li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* adjust as needed */
+    cursor: pointer;
+  }
+
+  .main-nav li i {
+    margin-left: 6px; /* Espacio entre el texto y el icono */
+    font-size: 1px; /* tamaño del icocno */
+  }
+
+  .header__logo {
+    padding: 16px 16px 16px 20px;
   }
 
 }
